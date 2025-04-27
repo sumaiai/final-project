@@ -14,3 +14,19 @@ a {
     color: blue;
     text-decoration: underline;
 }
+
+.map-container {
+    width: 100%;
+    margin: auto;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none;
+    font-size: 14px;
+}
