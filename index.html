@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grant Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Search Grants</h1>
+
+    <!-- Filters -->
+    <div>
+        <label for="state">State:</label>
+        <select id="stateFilter">
+            <option value="">All</option>
+        </select>
+
+        <label for="agency">Agency:</label>
+        <select id="agencyFilter">
+            <option value="">All</option>
+        </select>
+
+        <label for="startDate">Start Date After:</label>
+        <input type="date" id="startDateFilter">
+
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Results -->
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

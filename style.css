@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+label,
+select,
+input {
+    margin: 10px;
+}
+
+a {
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+}

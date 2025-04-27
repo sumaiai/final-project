@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag>
+<Award>
+<AwardTitle><![CDATA[CAREER: Machine Learning for Data-Driven Fault-Tolerant Control of Complex Systems]]></AwardTitle>
+<AGENCY>NSF</AGENCY>
+<AwardEffectiveDate>11/01/2023</AwardEffectiveDate>
+<AwardExpirationDate>08/31/2027</AwardExpirationDate>
+<AwardTotalIntnAmount>594314.00</AwardTotalIntnAmount>
+<AwardAmount>580454</AwardAmount>
+<AwardInstrument>
+<Value>Standard Grant</Value>
+</AwardInstrument>
+<Organization>
+<Code>07030000</Code>
+<Directorate>
+<Abbreviation>ENG</Abbreviation>
+<LongName>Directorate For Engineering</LongName>
+</Directorate>
+<Division>
+<Abbreviation>CMMI</Abbreviation>
+<LongName>Div Of Civil, Mechanical, &amp; Manufact Inn</LongName>
+</Division>
+</Organization>
+<ProgramOfficer>
+<SignBlockName>Alexandra Medina-Borja</SignBlockName>
+<PO_EMAI>amedinab@nsf.gov</PO_EMAI>
+<PO_PHON>7032927557</PO_PHON>
+</ProgramOfficer>
+<AbstractNarration><![CDATA[This Faculty Early Career Development (CAREER) project will create new knowledge about the dynamic behavior and control of complex systems; specifically, how to predict rare deleterious events in complex systems, and how to control these systems when faults occur to achieve a desired performance. Complex systems are networks comprising many collaborating elements that continuously interact with each other in a nonlinear and counterintuitive manner; examples include cybersecurity, manufacturing processes, automated transportation infrastructure, medical devices, and many others relevant to our well-being. Faults in these systems are malfunctions, such as cyber-attack or sensor failure, that break security, degrade system functionality, and cause safety concerns and economic losses. Control of these systems is challenging because the dynamic behavior of the ensemble is intrinsically difficult to predict. This award supports fundamental research to build a “fault-aware” control framework to study how interactions among individual elements produce the collective’s dynamics and how to alleviate the effect of faults on complex systems. To develop and test the control framework, a failing heart managed by a ventricular assist device will be used as the foundation to (i) detect device faults such as thrombosis and suction that jeopardize the survival of heart failure patients and (ii) automatically adjust the operation of the device under faults to improve the patient quality of life. The educational and outreach plan will focus on promoting active and life-long learning and engaging and training students at various levels, including veterans transitioning to civilian life, in emerging industries and transdisciplinary skills.&lt;br/&gt;&lt;br/&gt;Using machine learning as the backbone, the objective of this research is to create a data-driven control strategy that regulates and maintains the system’s homeostasis following the onset of faults, while ensuring the system continues to operate in a seamless, continuous manner. This research will fill the knowledge gap for the supervision and control of complex systems when the governing phenomena are unknown and when first principle models are not readily attainable. The data-driven strategy will also overcome design limitations. Designing complex systems, such as ventricular assist devices, based on first principle models is costly, time consuming, and requires extensive expert knowledge to build application-specific models based on ubiquitous assumptions that are difficult to satisfy in practice. This research project will integrate data analytics, control theory, and machine learning into a unified framework with three innovative aspects: developing machine learning methods to discover symptomatic fingerprints of faults directly from data for real-time fault diagnosis; building an online adaptive modeling paradigm to predict performance-related variables that are not directly measurable due to economic considerations or technical constraints; designing a fault-tolerant controller to improve the system’s performance, while ensuring all operational constraints are met. In addition to its application to ventricular assist devices, this framework can be applied to protect computer systems from digital attacks, improve manufacturing efficiency, and address safety issues in automated transportation infrastructure and medical devices, leading to compelling societal and economic benefits.&lt;br/&gt;&lt;br/&gt;This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.]]></AbstractNarration>
+<MinAmdLetterDate>04/03/2024</MinAmdLetterDate>
+<MaxAmdLetterDate>04/03/2024</MaxAmdLetterDate>
+<ARRAAmount/>
+<TRAN_TYPE>Grant</TRAN_TYPE>
+<CFDA_NUM>47.041</CFDA_NUM>
+<NSF_PAR_USE_FLAG>1</NSF_PAR_USE_FLAG>
+<FUND_AGCY_CODE>4900</FUND_AGCY_CODE>
+<AWDG_AGCY_CODE>4900</AWDG_AGCY_CODE>
+<AwardID>2426614</AwardID>
+<Investigator>
+<FirstName>Yuncheng</FirstName>
+<LastName>Du</LastName>
+<PI_MID_INIT/>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Yuncheng Du</PI_FULL_NAME>
+<EmailAddress><![CDATA[ydu@clarkson.edu]]></EmailAddress>
+<NSF_ID>000736196</NSF_ID>
+<StartDate>04/03/2024</StartDate>
+<EndDate/>
+<RoleCode>Principal Investigator</RoleCode>
+</Investigator>
+<Institution>
+<Name>University of Houston</Name>
+<CityName>HOUSTON</CityName>
+<ZipCode>772043067</ZipCode>
+<PhoneNumber>7137435773</PhoneNumber>
+<StreetAddress>4300 MARTIN LUTHER KING BLVD</StreetAddress>
+<StreetAddress2/>
+<CountryName>United States</CountryName>
+<StateName>Texas</StateName>
+<StateCode>TX</StateCode>
+<CONGRESSDISTRICT>18</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_ORG>TX18</CONGRESS_DISTRICT_ORG>
+<ORG_UEI_NUM>QKWEF8XLMTT3</ORG_UEI_NUM>
+<ORG_LGL_BUS_NAME>UNIVERSITY OF HOUSTON SYSTEM</ORG_LGL_BUS_NAME>
+<ORG_PRNT_UEI_NUM/>
+</Institution>
+<Performance_Institution>
+<Name><![CDATA[University of Houston]]></Name>
+<CityName>HOUSTON</CityName>
+<StateCode>TX</StateCode>
+<ZipCode>772043067</ZipCode>
+<StreetAddress><![CDATA[HOUSTON, TX 772043067]]></StreetAddress>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<StateName>Texas</StateName>
+<CountryFlag>1</CountryFlag>
+<CONGRESSDISTRICT>18</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_PERF>TX18</CONGRESS_DISTRICT_PERF>
+</Performance_Institution>
+<ProgramElement>
+<Code>1045</Code>
+<Text>CAREER: FACULTY EARLY CAR DEV</Text>
+</ProgramElement>
+<ProgramElement>
+<Code>7569</Code>
+<Text>Dynamics, Control and System D</Text>
+</ProgramElement>
+<ProgramReference>
+<Code>030E</Code>
+<Text>CONTROL SYSTEMS</Text>
+</ProgramReference>
+<ProgramReference>
+<Code>034E</Code>
+<Text>Dynamical systems</Text>
+</ProgramReference>
+<ProgramReference>
+<Code>1045</Code>
+<Text>CAREER-Faculty Erly Career Dev</Text>
+</ProgramReference>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Fund>
+<Code>01002223DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<FUND_OBLG>2022~580453</FUND_OBLG>
+</Award>
+</rootTag>

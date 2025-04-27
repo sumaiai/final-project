@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Award 2 Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Award 2 Details</h1>
+    <div id="awardDetails"></div>
+
+    <script>
+        async function loadAward() {
+            const response = await fetch('xml/award2.xml');
+            const text = await response.text();
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(text, 'application/xml');
+
+            const award = xml.querySelector('Award');
+
+            const detailsDiv = document.getElementById('awardDetails');
+            detailsDiv.innerHTML = `
+        <p><strong>Title:</strong> ${award.querySelector('AwardTitle')?.textContent}</p>
+        <p><strong>Agency:</strong> ${award.querySelector('AGENCY')?.textContent}</p>
+        <p><strong>Start Date:</strong> ${award.querySelector('AwardEffectiveDate')?.textContent}</p>
+        <p><strong>Expiration Date:</strong> ${award.querySelector('AwardExpirationDate')?.textContent}</p>
+        <p><strong>Amount:</strong> ${award.querySelector('AwardAmount')?.textContent}</p>
+        <p><strong>State:</strong> ${award.querySelector('StateName')?.textContent}</p>
+        <p><strong>Abstract:</strong> ${award.querySelector('AbstractNarration')?.textContent}</p>
+        <!-- You can add more fields here -->
+      `;
+        }
+
+        loadAward();
+    </script>
+</body>
+
+</html>
