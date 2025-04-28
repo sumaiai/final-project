@@ -34,7 +34,7 @@ async function loadAward() {
         <p><strong>Amount:</strong> ${award.querySelector('AwardAmount')?.textContent ?? 'N/A'}</p>
         <p><strong>State:</strong> ${award.querySelector('StateName')?.textContent ?? 'N/A'}</p>
         <p><strong>Abstract:</strong> ${award.querySelector('AbstractNarration')?.textContent ?? 'N/A'}</p>
-        <p><a href="index.html">← Back to Search</a></p>
+        <p><a href="main.html">← Back to Search</a></p>
       `;
     } catch (error) {
         document.getElementById('awardDetails').innerHTML = `<p>Error loading award: ${error.message}</p>`;
