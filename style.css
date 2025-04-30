@@ -77,7 +77,7 @@ a:hover path {
 
     font-weight: 500;
     color: black;
-    font-size: 30px;
+    font-size: 15px;
     background-color: #F7DDE6;
     border-radius: 20px;
 
@@ -95,7 +95,7 @@ a:hover path {
     font-weight: 500;
     color: white;
     background-color: #F7DDE6;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #awardDetails {
@@ -132,5 +132,5 @@ a:hover path {
 
 #resultsTable {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 15px;
 }
