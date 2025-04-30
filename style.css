@@ -126,8 +126,8 @@ a:hover path {
 
 .date {
     border: solid 2px palevioletred;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
 }
 
 #resultsTable {
