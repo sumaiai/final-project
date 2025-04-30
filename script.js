@@ -21,8 +21,12 @@ async function loadXMLData() {
                 title: award.querySelector('AwardTitle')?.textContent ?? 'No Title',
                 agency: award.querySelector('AGENCY')?.textContent ?? '',
                 startDate: award.querySelector('AwardEffectiveDate')?.textContent ?? '',
+                endDate: award.querySelector('AwardExpirationDate')?.textContent ?? '',
                 state: award.querySelector('StateName')?.textContent ?? '',
-                id: file.split('/')[1].split('.')[0] // award1, award2, etc.
+                amount: award.querySelector('AwardAmount')?.textContent ?? '',
+                pi: award.querySelector('PI_FULL_NAME')?.textContent ?? '',
+                institution: award.querySelector('Institution > Name')?.textContent ?? '',
+                id: file.split('/')[1].split('.')[0]
             });
         }
     }
@@ -56,8 +60,8 @@ function showAwards() {
     const agencyFilter = document.getElementById('agencyFilter').value;
     const startDateFilter = document.getElementById('startDateFilter').value;
 
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
+    const resultsBody = document.getElementById('resultsBody');
+    resultsBody.innerHTML = '';
 
     const filtered = awards.filter(a => {
         return (!stateFilter || a.state === stateFilter) &&
@@ -66,16 +70,22 @@ function showAwards() {
     });
 
     if (filtered.length === 0) {
-        resultsDiv.innerHTML = '<p>No results found.</p>';
+        resultsBody.innerHTML = '<tr><td colspan="6">No results found.</td></tr>';
         return;
     }
 
     filtered.forEach(a => {
-        const link = document.createElement('a');
-        link.href = `award.html?id=${a.id}`; // dynamic link!
-        link.textContent = a.title;
-        link.style.display = 'block';
-        resultsDiv.appendChild(link);
+        const row = document.createElement('tr');
+
+        row.innerHTML = `
+        <td><a href="award.html?id=${a.id}">${a.title}</a></td>
+        <td>${a.startDate || 'N/A'}</td>
+        <td>${a.endDate || 'N/A'}</td>
+        <td>${a.pi || 'N/A'}</td>
+        <td>${a.institution || 'N/A'}</td>
+        <td>${a.amount || 'N/A'}</td>
+      `;
+        resultsBody.appendChild(row);
     });
 }
 
