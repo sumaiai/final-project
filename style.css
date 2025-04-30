@@ -80,6 +80,7 @@ a:hover path {
     font-size: 15px;
     background-color: #F7DDE6;
     border-radius: 20px;
+    overflow-y: scroll;
 
 
 }
