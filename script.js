@@ -1,14 +1,9 @@
-const xmlFiles = [
-    'xml/award1.xml',
-    'xml/award2.xml',
-    'xml/award3.xml',
-    'xml/award4.xml',
-    'xml/award5.xml'
-];
-
 let awards = [];
 
 async function loadXMLData() {
+    const listRes = await fetch('award-list.json');
+    const xmlFiles = await listRes.json();
+
     for (const file of xmlFiles) {
         const response = await fetch(file);
         const text = await response.text();
@@ -90,6 +85,4 @@ function showAwards() {
 }
 
 document.getElementById('searchBtn').addEventListener('click', showAwards);
-
-// Load XML data on page load
 loadXMLData();
